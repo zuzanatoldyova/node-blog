@@ -1,12 +1,12 @@
 /* app.js */
 
 // require and instantiate express
-const app = require('express')()
+var app = require('express')()
 
 // fake posts to simulate database
-const posts = [
+var posts = [
   {
-    id:1,
+    id: 1,
     author: 'John',
     title: 'Templating with EJS',
     body: 'Blog post number 1'
@@ -31,7 +31,7 @@ const posts = [
   }
 ]
 
-// ste the view engine to ejs
+// set the view engine to ejs
 app.set('view engine', 'ejs')
 
 // blog home page
